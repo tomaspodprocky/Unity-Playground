@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: Pointer graphics
+  m_Name: Magnifying glass page
   m_EditorClassIdentifier: 
   m_Paragraphs:
     m_Items:
@@ -35,25 +35,27 @@ MonoBehaviour:
       m_TutorialButtonText: 
     - m_Type: 0
       Title:
-        m_Untranslated: Page title
+        m_Untranslated: Magnifying glass effect using sprite masks
       Text:
-        m_Untranslated: "This is a small project to test out cursor behaviour in
-          Unity. Maily to check how easily the cursor can be changed and made pixel
-          perfect, at least from the appeareance side.\n\nFirst thing - in order
-          to make a cursor resizable, one cannot use hardware cursor. As soon as
-          hardware cursor is enabled, the cursor texture will be matched to the current
-          screen resolution. Even if the cursor texture would be resized, there is
-          no change - you can try it by unselecting \"Force software\" and try to
-          move the slider.\n\nPlease note: project uses Pixel Cursors free package
-          from Unity Asset store.\n \nWith a software cursor, it is possible to resize
-          the cursor, even though the cursor will no move \"pixel by pixel\" . It
-          will still move using the pixel in the used screen resolution.\nBut now
-          the texture can be resized and used accordingly.\nTry to set a PPU value
-          (pixels per unit) to see how a cursor will resize (cursor texture is 32x32
-          pixels).\nAlso try to se the target horizontal resolution and the cursor
-          should resize accordingly.\n\nNote: if you are using the new Input system,
-          for the software cursor to work you must set the \"Active input handling\"
-          in the player settings to \"Both\"."
+        m_Untranslated: 'The core of this effect is achieved by using a sprite mask.
+          And whatever needs to be shown inside of the mask (which can have any shape)
+          is set in the SpriteRenderer property call "Mask interaction".
+
+
+          There
+          are two objects  for this:
+
+          1. The magnifying glass itself -
+          simple graphics with a child object which contains a sprite mask
+
+          2.
+          The object to be shown in the mask itself. In the scene it is called "Gfx
+          to show", but in principle it could be a prefab.
+
+
+          The magnifying
+          glass is instantiated by a simple Controller in the scene - reacts to a
+          mouse click.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}

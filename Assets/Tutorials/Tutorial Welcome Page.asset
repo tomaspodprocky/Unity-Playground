@@ -17,26 +17,11 @@ MonoBehaviour:
       m_Calls: []
   m_Image: {fileID: 0}
   m_WindowTitle:
-    m_Untranslated: '"Pixel perfect" mouse cursor'
+    m_Untranslated: Play Ground
   m_Title:
-    m_Untranslated: '"Pixel perfect" mouse cursor'
+    m_Untranslated: Play-ground
   m_Description:
-    m_Untranslated: "This is a small project to test out cursor behaviour in Unity.
-      Maily to check how easily the cursor can be changed and made pixel perfect,
-      at least from the appeareance side.\n\nFirst thing - in order to make a cursor
-      resizable, one cannot use hardware cursor. As soon as hardware cursor is enabled,
-      the cursor texture will be matched to the current screen resolution. Even if
-      the cursor texture would be resized, there is no change - you can try it by
-      unselecting \"Force software\" and try to move the slider.\n\nPlease note:
-      project uses Pixel Cursors free package from Unity Asset store.\n \nWith a
-      software cursor, it is possible to resize the cursor, even though the cursor
-      will no move \"pixel by pixel\" . It will still move using the pixel in the
-      used screen resolution.\nBut now the texture can be resized and used accordingly.\nTry
-      to set a PPU value (pixels per unit) to see how a cursor will resize (cursor
-      texture is 32x32 pixels).\nAlso try to se the target horizontal resolution
-      and the cursor should resize accordingly.\n\nNote: if you are using the new
-      Input system, for the software cursor to work you must set the \"Active input
-      handling\" in the player settings to \"Both\"."
+    m_Untranslated: This is a small project to test out different things in Unity
   m_Buttons:
   - Text:
       m_Untranslated: Close

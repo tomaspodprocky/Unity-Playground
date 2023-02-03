@@ -19,19 +19,37 @@ MonoBehaviour:
   OrderInView: 0
   BackgroundImage: {fileID: 0}
   Title:
-    m_Untranslated: 
+    m_Untranslated: Notes and tutorials
   Subtitle:
-    m_Untranslated: 
+    m_Untranslated: Different topics in this project
   Description:
-    m_Untranslated: 
+    m_Untranslated: Description of the card...
   ProjectLayout: {fileID: 0}
   Sections:
   - OrderInView: 0
     Heading:
       m_Untranslated: Pointer graphics
     Text:
-      m_Untranslated: This is my text for the tutorial
+      m_Untranslated: Work with pointer cursors, scaling them, changing, etc..
     Metadata: 
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: c4ea72ff44230234ab48a05219907bbd, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Cinemachine
+    Text:
+      m_Untranslated: How to setup a quick player offset tracking.
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: d6509f01506708541b2302f76b8fdab7, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Magnifying glass effect
+    Text:
+      m_Untranslated: Usage of sprite masking for simple 2D magnifying glass effect.
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: 1f70279fd05f8654183c1608000ebb2f, type: 2}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
-  m_Name: Pointer graphics
+  m_Name: CinemachinePage
   m_EditorClassIdentifier: 
   m_Paragraphs:
     m_Items:
@@ -37,23 +37,28 @@ MonoBehaviour:
       Title:
         m_Untranslated: Page title
       Text:
-        m_Untranslated: "This is a small project to test out cursor behaviour in
-          Unity. Maily to check how easily the cursor can be changed and made pixel
-          perfect, at least from the appeareance side.\n\nFirst thing - in order
-          to make a cursor resizable, one cannot use hardware cursor. As soon as
-          hardware cursor is enabled, the cursor texture will be matched to the current
-          screen resolution. Even if the cursor texture would be resized, there is
-          no change - you can try it by unselecting \"Force software\" and try to
-          move the slider.\n\nPlease note: project uses Pixel Cursors free package
-          from Unity Asset store.\n \nWith a software cursor, it is possible to resize
-          the cursor, even though the cursor will no move \"pixel by pixel\" . It
-          will still move using the pixel in the used screen resolution.\nBut now
-          the texture can be resized and used accordingly.\nTry to set a PPU value
-          (pixels per unit) to see how a cursor will resize (cursor texture is 32x32
-          pixels).\nAlso try to se the target horizontal resolution and the cursor
-          should resize accordingly.\n\nNote: if you are using the new Input system,
-          for the software cursor to work you must set the \"Active input handling\"
-          in the player settings to \"Both\"."
+        m_Untranslated: 'First step is to import Cinemachine package. And afterwards,
+          through the menu add a "Cinemachine virtual camera".
+
+
+          Normally,
+          this adds a new GameObject to the hierarchy called "CM vcam1". There can
+          be multiple virtual cameras.
+
+
+          The simplest way to do tracking
+          of an object without too much tinkering with CM settings is to have a virtual
+          empty follow object. CM camera must be set to follow this object. And you
+          change the position of this object.
+
+          See the Player object, and
+          Directional Controller script for a very simple implementation.
+
+
+          In
+          this case, the Player gameObject has a child empty object called followObject.
+          And the position of this object is changed in this case - by the movement
+          keyboard inputs.'
       m_Tutorial: {fileID: 0}
       m_Image: {fileID: 0}
       m_Video: {fileID: 0}
