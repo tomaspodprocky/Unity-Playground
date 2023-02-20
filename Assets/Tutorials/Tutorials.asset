@@ -53,3 +53,12 @@ MonoBehaviour:
     Url: 
     Image: {fileID: 0}
     Tutorial: {fileID: 11400000, guid: 1f70279fd05f8654183c1608000ebb2f, type: 2}
+  - OrderInView: 0
+    Heading:
+      m_Untranslated: Parallax for pixel perfect
+    Text:
+      m_Untranslated: One way to setup the parallax script for pixel perfect situations.
+    Metadata: 
+    Url: 
+    Image: {fileID: 0}
+    Tutorial: {fileID: 11400000, guid: def8b3e2118430e498810d3ee021e8b4, type: 2}
