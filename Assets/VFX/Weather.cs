@@ -26,6 +26,11 @@ public class Weather : MonoBehaviour
 
     private void Update()
     {
+        RefreshWeather();
+    }
+
+    private void RefreshWeather()
+    {
         foreach (WeatherVFX weather in weatherVFXElements)
         {
             if (currentWeather != 0)
@@ -53,7 +58,6 @@ public class Weather : MonoBehaviour
                 }
             }
         }
-
     }
 
 }
