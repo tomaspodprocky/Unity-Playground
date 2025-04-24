@@ -14,7 +14,7 @@ public class DirectionalController : MonoBehaviour
 
     void OnEnable()
     {
-        CinemachineVirtualCamera vCam = FindObjectOfType<CinemachineVirtualCamera>();
+        CinemachineVirtualCamera vCam = FindAnyObjectByType<CinemachineVirtualCamera>();
         vCam.Follow = followObject;
     }
 

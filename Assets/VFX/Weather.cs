@@ -21,7 +21,7 @@ public class Weather : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        weatherVFXElements = new(GameObject.FindObjectsOfType<WeatherVFX>(true));
+        weatherVFXElements = new(GameObject.FindObjectsByType<WeatherVFX>(FindObjectsInactive.Exclude, FindObjectsSortMode.None));
     }
 
     private void Update()
